@@ -1,0 +1,74 @@
+{
+"record":[
+	{
+		"host_name": "XYX",
+		"resource":
+		{
+			"cpu":[
+				{
+					"dttime":"ag",
+					"cvalue":"6456"
+				},
+				{
+					"dttime":"fg",
+					"cvalue":"367"
+				},
+				{
+					"dttime":"gh",
+					"cvalue":"897.89"
+				}
+			],
+			"memory":[
+				{
+					"dttime":"sg",
+					"mvalue":"66"
+				},
+				{
+					"dttime":"bh",
+					"mvalue":"123"
+				},
+				{
+					"dttime":"lk",
+					"mvalue":"7908"
+				}
+			]
+		}
+		
+	},
+	{
+		"host_name": "XYXasd",
+		"resource":
+		{
+			"cpu":[
+				{
+					"dttime":"ff",
+					"cvalue":"56"
+				},
+				{
+					"dttime":"hh",
+					"cvalue":"45"
+				},
+				{
+					"dttime":"xxx",
+					"cvalue":"67"
+				}
+			],
+			"memory":[
+				{
+					"dttime":"",
+					"mvalue":""
+				},
+				{
+					"dttime":"",
+					"mvalue":""
+				},
+				{
+					"dttime":"",
+					"mvalue":""
+				}
+			]
+		}
+		
+	}
+]
+}
