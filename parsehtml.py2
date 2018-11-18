@@ -1,0 +1,20 @@
+from html.parser import HTMLParser
+
+class MyHTMLParser(HTMLParser):
+
+    def handle_starttag(self, tag, attrs):
+        if(tag == 'th'):
+            print("Encountered a header start tag:", tag)
+        elif (tag == 'td'):
+            print("Encountered a DATA start tag:", tag)
+
+    def handle_endtag(self, tag):
+        print("Encountered an end tag :", tag)
+
+    def handle_data(self, data):
+        print("Encountered some data  :", data)
+
+
+parser = MyHTMLParser()
+with open('C:/Program Files (x86)/Hitachi/jp1pcWebCon/Reports/User-PC/User-PC_27072018_CPU_test.htm', 'r') as f:
+    parser.feed(''.join(f.readlines()))

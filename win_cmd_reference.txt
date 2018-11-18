@@ -1,0 +1,16 @@
+Windows Powershell commands:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REM the following will also indicate the "StartUp Type" of the windows service:
+
+Gets the service start mode:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+get-wmiobject win32_service|select-object -property DisplayName,Status,StartMode|Sort-Object -Property StartType|format-table -auto
+
+
+
+##To fetch all the files that were last modified = 4days ago.
+Get-ChildItem -Path . -Recurse| ? {$_.LastWriteTime -gt (Get-Date).AddDays(-4)} 
+
+##This get the count, includes the filter option:
+$compareDate = (Get-Date).AddDays(-3)
+@(Get-ChildItem -Path c:\pstbak\*.* -Filter '*.pst','*.mdb' -Recurse | Where-Object { $_.LastWriteTime -gt $compareDate}).Count
